@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <vector>
 
 namespace gameFunctions
 {
@@ -15,7 +16,7 @@ namespace gameFunctions
 		ChessPiece(int position) : m_position(position), m_isActive(true) {}
 
 		virtual bool MovePiece(int& position) { return false; }
-		virtual int* GetValidMoves();
+		virtual std::vector<int> GetValidMoves();
 		virtual void PrintValidMoves() {}
 
 		const std::string& GetName() const { return m_name; }

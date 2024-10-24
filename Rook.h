@@ -1,5 +1,7 @@
 #pragma once
 #include "ChessPiece.h"
+#include <iostream>
+#include <vector>
 
 namespace gameFunctions
 {
@@ -12,7 +14,7 @@ namespace gameFunctions
 		}
 
 		virtual bool MovePiece(int& position) override;
-		virtual int* GetValidMoves() override;
+		virtual std::vector<int> GetValidMoves() override;
 		virtual void PrintValidMoves() override;
 	};
 }

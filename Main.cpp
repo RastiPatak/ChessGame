@@ -12,5 +12,5 @@ int main()
 	r.PrintValidMoves();
 
 
-	std::cout << game.GetBlack()[0].GetName() << ", " << game.GetBlack()[0].GetPosition() << std::endl;
+	std::cout << game.GetBlack()[0].GetName() << ", " << game.GetBlack()[0].GetPosition() << ";" << ((game.GetBlack()[0].GetPosition() & 0xf0) >> 4) << ";" << (game.GetBlack()[0].GetPosition() & 0x0f) << std::endl;
 }

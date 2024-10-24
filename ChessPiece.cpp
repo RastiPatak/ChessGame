@@ -1,6 +1,6 @@
 #include "ChessPiece.h"
 
-int* gameFunctions::ChessPiece::GetValidMoves()
+std::vector<int> gameFunctions::ChessPiece::GetValidMoves()
 {
-    return nullptr;
+    return std::vector<int>(0);
 }

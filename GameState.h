@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ChessPiece.h"
+#include <vector>
 
 namespace gameState
 {
