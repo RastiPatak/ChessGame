@@ -15,7 +15,7 @@ namespace gameFunctions
 		ChessPiece() : m_position(0x0), m_isActive(true) {}
 		ChessPiece(int position) : m_position(position), m_isActive(true) {}
 
-		virtual bool MovePiece(int& position) { return false; }
+		virtual bool MovePiece(const int& position) { return false; }
 		virtual std::vector<int> GetValidMoves();
 		virtual void PrintValidMoves() {}
 

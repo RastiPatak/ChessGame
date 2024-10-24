@@ -13,7 +13,7 @@ namespace gameFunctions
 			m_name = "Rook";
 		}
 
-		virtual bool MovePiece(int& position) override;
+		virtual bool MovePiece(const int& position) override;
 		virtual std::vector<int> GetValidMoves() override;
 		virtual void PrintValidMoves() override;
 	};

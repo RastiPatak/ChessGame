@@ -1,6 +1,6 @@
 #include "Rook.h"
 
-bool gameFunctions::Rook::MovePiece(int& position)
+bool gameFunctions::Rook::MovePiece(const int& position)
 {
     std::vector<int> validMoves = GetValidMoves();
     for (int i = 0; i < 14; i++)
